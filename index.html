@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+  0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,
+  100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+
+
+  <script src="https://kit.fontawesome.com/5f7af69c2c.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(25, 25, 44);
+    color: white;
+    font-family: 'Poppins', Roboto, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 70px;
+    background-color: rgb(29, 29, 41);
+    box-shadow: 0px 0px 20px 1px black;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    margin: 10px 15px;
+}
+
+.left {
+    font-size: 24px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(117, 69, 162);
+    font-size: 20px;
+    transition: 0.2s ease;
+}
+
+.first {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    gap: 40px;
+}
+
+.leftsection {
+    font-size: 36px;
+    text-align: center;
+    max-width: 500px;
+}
+
+.leftsection .btn,
+.leftsection .btn1 {
+    margin: 10px 5px;
+}
+
+.img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 1000px;
+    box-shadow: 0px 0px 20px 10px rgb(101, 101, 134);
+}
+
+.name,
+#element {
+    color: rgb(117, 69, 162);
+    text-shadow: 0px 0px 20px;
+}
+
+hr {
+    border: none;
+    background-color: rgb(84, 84, 108);
+    height: 1.5px;
+    margin: 50px 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.second {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px 60px;
+}
+
+.box {
+    text-align: center;
+    max-width: 180px;
+}
+
+.html {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.btn,
+.btn1 {
+    font-size: 16px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: rgb(25, 25, 44);
+    color: white;
+    border: 2px solid white;
+}
+
+.btn1 {
+    background-color: white;
+    color: rgb(25, 25, 44);
+    width: auto;
+}
+
+.btn1 a {
+    color: rgb(25, 25, 44);
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.icon {
+    color: white;
+    transition: 0.3s ease;
+}
+.icon:hover {
+    color: rgb(117, 69, 162);
+    transform: scale(1.2);
+}
+
+.line {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(58, 58, 67);
+    margin-bottom: 20px;
+}
+
+/* ---------------- MEDIA QUERIES ---------------- */
+@media (max-width: 768px) {
+    .left {
+        font-size: 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .leftsection {
+        font-size: 28px;
+    }
+    .img {
+        width: 180px;
+        height: 180px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .btn, .btn1 {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+}
+@media (max-width: 480px) {
+    .leftsection {
+        font-size: 24px;
+    }
+    .btn, .btn1 {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+    .icon {
+        font-size: 40px !important;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><i class="fa-solid fa-code"></i> Meduru Raga Vyshnavi</div>
+            <div class="right">
+                <ul>                  
+                    <li><a href="#about">About Me</a></li>                   
+                    <li><a href="#skills">Skills</a></li>                                    
+                    <li><a href="#contact">Contact Me</a></li>                   
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first" id="about">
+            <div class="leftsection">Hey, I'm <span class="name">Raga Vyshnavi</span> and I am a passionate
+                <span id="element"></span>
+                <br>
+                <button class="btn"><a href="Resume.pdf">Download Resume</a></button>
+                <button class="btn1"><a href="https://github.com/RagaVyshnaviM/Projects_and_Labs">Github</a></button>
+            </div>
+            <div class="rightsection"><img class="img" src="me.jpg" alt=""></div>
+        </section>
+        <hr>
+        <h1>Skills</h1>
+        <section class="second" id="skills">
+            <div>
+            <div class="box">
+                <img class="html" src="html.png" alt="">
+                <h3>HTML</h3>
+            </div>
+            <div class="box">
+                <img class="html" src="css.png" alt="">
+                <h3>CSS</h3>
+            </div>
+            </div>
+            <div>
+            <div class="box">
+                <img class="html" src="Bootstrap.png" alt="">
+                <h3>Bootstrap</h3>
+            </div>
+            <div class="box">
+                <img class="html" src="P.png" alt="">
+                <h3>Python</h3>
+            </div>
+            </div>
+            <div>
+            <div class="box">
+                <img class="html" src="sql.png" alt="">
+                <h3>SQL</h3>
+            </div>
+            <div class="box">
+                <img class="html" src="c.png" alt="">
+                <h3>C language</h3>
+            </div>
+            </div>
+        </section>
+        <hr>
+        <h1>Contact Me</h1>
+        <section class="three" id="contact">
+            <p class="line">Let's Connect</p>
+             <div class="contact">
+                <a href="https://x.com/RagaVyshnavi_06"><i class="icon fa-brands fa-x-twitter fa-5x"></i></a>
+           
+                <a href="https://www.linkedin.com/in/raga-vyshnavi-m-aa47b631a/"><i class="icon fa-brands fa-linkedin fa-5x"></i></a>
+                
+                <a href="https://www.instagram.com/raga_vyshnavi_01/"><i class="icon fa-brands fa-instagram fa-5x"></i></a>
+            </div>
+             
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['Student', 'Coder','Web Developer.'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>
